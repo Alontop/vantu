@@ -5,7 +5,6 @@
 @tailwind utilities;
 
 @layer utilities {
-  /* Animación horizontal constante y fluida */
   .animate-marquee-horizontal {
     animation: marqueeHorizontalTS 80s linear infinite;
   }
@@ -16,12 +15,10 @@
     transform: translateX(0%);
   }
   100% {
-    /* Se desplaza el 50% exacto para enganchar con el duplicado de forma imperceptible */
     transform: translateX(-50%);
   }
 }
 
-/* Agrega esto a tu archivo CSS global o del componente */
 .fade-in-out {
   animation: fadeInOut 3s forwards;
 }
