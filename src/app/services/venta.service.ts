@@ -13,9 +13,11 @@ export class VentaService {
       tap((respuesta) => {
         window.dataLayer = window.dataLayer || [];
         window.dataLayer.push({
-          event: 'pago_realizado',
+          event: 'purchase',
           cliente: pedido.nombreCliente,
-          total_venta: pedido.total,
+          value: pedido.total,
+          currency: 'PEN',
+          transaction_id: 'TX_' + new Date().getTime(),
         });
       }),
     );
