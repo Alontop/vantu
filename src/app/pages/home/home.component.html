@@ -1,0 +1,485 @@
+<div class="w-full text-white font-display pb-16 bg-transparent">
+  <div
+    *ngIf="mensajeNotificacion"
+    class="fixed bottom-5 right-5 z-[2000] bg-black text-white px-6 py-3 rounded-lg shadow-xl border border-zinc-800 fade-in-out"
+  >
+    {{ mensajeNotificacion }}
+  </div>
+
+  <section
+    class="w-full overflow-hidden bg-transparent py-4 relative mt-2"
+  ></section>
+
+  <section class="w-full overflow-hidden bg-transparent py-4 relative mt-2">
+    <div class="flex w-max animate-marquee-horizontal gap-6">
+      <div class="flex gap-6 shrink-0">
+        <div
+          class="h-[500px] w-[380px] relative overflow-hidden rounded-xs group"
+        >
+          <img
+            src="assets/banner1.jpg"
+            alt="Vantu 1"
+            class="w-full h-full object-cover"
+          />
+          <div
+            class="absolute inset-0 bg-black/50 transition-colors duration-300 group-hover:bg-black/20"
+          ></div>
+        </div>
+
+        <div
+          class="h-[500px] w-[380px] relative overflow-hidden rounded-xs group"
+        >
+          <img
+            src="assets/banner2.jpg"
+            alt="Vantu 2"
+            class="w-full h-full object-cover"
+          />
+          <div
+            class="absolute inset-0 bg-black/50 transition-colors duration-300 group-hover:bg-black/20"
+          ></div>
+        </div>
+
+        <div
+          class="h-[500px] w-[380px] relative overflow-hidden rounded-xs group"
+        >
+          <img
+            src="assets/banner3.jpg"
+            alt="Vantu 3"
+            class="w-full h-full object-cover"
+          />
+          <div
+            class="absolute inset-0 bg-black/50 transition-colors duration-300 group-hover:bg-black/20"
+          ></div>
+        </div>
+
+        <div
+          class="h-[500px] w-[380px] relative overflow-hidden rounded-xs group"
+        >
+          <img
+            src="assets/banner4.jpg"
+            alt="Vantu 4"
+            class="w-full h-full object-cover"
+          />
+          <div
+            class="absolute inset-0 bg-black/50 transition-colors duration-300 group-hover:bg-black/20"
+          ></div>
+        </div>
+
+        <div
+          class="h-[500px] w-[380px] relative overflow-hidden rounded-xs group"
+        >
+          <img
+            src="assets/banner5.jpg"
+            alt="Vantu 5"
+            class="w-full h-full object-cover"
+          />
+          <div
+            class="absolute inset-0 bg-black/50 transition-colors duration-300 group-hover:bg-black/20"
+          ></div>
+        </div>
+
+        <div
+          class="h-[500px] w-[380px] relative overflow-hidden rounded-xs group"
+        >
+          <img
+            src="assets/banner6.jpg"
+            alt="Vantu 6"
+            class="w-full h-full object-cover"
+          />
+          <div
+            class="absolute inset-0 bg-black/50 transition-colors duration-300 group-hover:bg-black/20"
+          ></div>
+        </div>
+      </div>
+
+      <div class="flex gap-6 shrink-0">
+        <div
+          class="h-[500px] w-[380px] relative overflow-hidden rounded-xs group"
+        >
+          <img
+            src="assets/banner1.jpg"
+            alt="Vantu 1"
+            class="w-full h-full object-cover"
+          />
+          <div
+            class="absolute inset-0 bg-black/50 transition-colors duration-300 group-hover:bg-black/20"
+          ></div>
+        </div>
+
+        <div
+          class="h-[500px] w-[380px] relative overflow-hidden rounded-xs group"
+        >
+          <img
+            src="assets/banner2.jpg"
+            alt="Vantu 2"
+            class="w-full h-full object-cover"
+          />
+          <div
+            class="absolute inset-0 bg-black/50 transition-colors duration-300 group-hover:bg-black/20"
+          ></div>
+        </div>
+
+        <div
+          class="h-[500px] w-[380px] relative overflow-hidden rounded-xs group"
+        >
+          <img
+            src="assets/banner3.jpg"
+            alt="Vantu 3"
+            class="w-full h-full object-cover"
+          />
+          <div
+            class="absolute inset-0 bg-black/50 transition-colors duration-300 group-hover:bg-black/20"
+          ></div>
+        </div>
+
+        <div
+          class="h-[500px] w-[380px] relative overflow-hidden rounded-xs group"
+        >
+          <img
+            src="assets/banner4.jpg"
+            alt="Vantu 4"
+            class="w-full h-full object-cover"
+          />
+          <div
+            class="absolute inset-0 bg-black/50 transition-colors duration-300 group-hover:bg-black/20"
+          ></div>
+        </div>
+
+        <div
+          class="h-[500px] w-[380px] relative overflow-hidden rounded-xs group"
+        >
+          <img
+            src="assets/banner5.jpg"
+            alt="Vantu 5"
+            class="w-full h-full object-cover"
+          />
+          <div
+            class="absolute inset-0 bg-black/50 transition-colors duration-300 group-hover:bg-black/20"
+          ></div>
+        </div>
+
+        <div
+          class="h-[500px] w-[380px] relative overflow-hidden rounded-xs group"
+        >
+          <img
+            src="assets/banner6.jpg"
+            alt="Vantu 6"
+            class="w-full h-full object-cover"
+          />
+          <div
+            class="absolute inset-0 bg-black/50 transition-colors duration-300 group-hover:bg-black/20"
+          ></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section
+    class="max-w-7xl mx-auto px-6 md:px-12 py-24 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-24 items-start"
+  >
+    <div class="lg:col-span-5 space-y-6">
+      <h2 class="text-4xl font-light tracking-wide">Categorias</h2>
+      <p
+        class="font-sans font-light text-sm text-zinc-400 leading-relaxed text-justify tracking-wide"
+      >
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry's standard dummy text ever
+        since the 1500s, when an unknown printer took a galley of type and
+        scrambled it to make a type specimen book.
+      </p>
+    </div>
+
+    <div class="lg:col-span-7 w-full flex flex-col space-y-4 max-w-xl">
+      <div
+        class="flex w-full bg-[#0d0d0d]/90 backdrop-blur-md rounded-l-[2.5rem] overflow-hidden items-center border border-zinc-900 hover:border-zinc-400/50 transform hover:scale-[1.06] transition-all duration-500 ease-out cursor-pointer group shadow-lg"
+      >
+        <div
+          class="w-32 h-32 bg-zinc-900 rounded-l-[2.5rem] overflow-hidden shrink-0"
+        >
+          <img
+            src="assets/cat-mujer.jpeg"
+            alt="Mujer"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
+          />
+        </div>
+        <div class="flex-1 text-center py-4">
+          <h3
+            class="text-xl font-light tracking-[0.2em] uppercase transition-colors duration-300 group-hover:text-zinc-300"
+          >
+            Mujer
+          </h3>
+          <span
+            class="text-[9px] text-zinc-500 uppercase tracking-[0.4em] block mt-1"
+            >vantu</span
+          >
+        </div>
+      </div>
+
+      <div
+        class="flex w-full bg-[#0d0d0d]/90 backdrop-blur-md rounded-l-[2.5rem] overflow-hidden items-center border border-zinc-900 hover:border-zinc-400/50 transform hover:scale-[1.06] transition-all duration-500 ease-out cursor-pointer group shadow-lg"
+      >
+        <div
+          class="w-32 h-32 bg-zinc-900 rounded-l-[2.5rem] overflow-hidden shrink-0"
+        >
+          <img
+            src="assets/cat-hombre.jpg"
+            alt="Hombre"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
+          />
+        </div>
+        <div class="flex-1 text-center py-4">
+          <h3
+            class="text-xl font-light tracking-[0.2em] uppercase transition-colors duration-300 group-hover:text-zinc-300"
+          >
+            Hombre
+          </h3>
+          <span
+            class="text-[9px] text-zinc-500 uppercase tracking-[0.4em] block mt-1"
+            >vantu</span
+          >
+        </div>
+      </div>
+
+      <div
+        class="flex w-full bg-[#0d0d0d]/90 backdrop-blur-md rounded-l-[2.5rem] overflow-hidden items-center border border-zinc-900 hover:border-zinc-400/50 transform hover:scale-[1.06] transition-all duration-500 ease-out cursor-pointer group shadow-lg"
+      >
+        <div
+          class="w-32 h-32 bg-zinc-900 rounded-l-[2.5rem] overflow-hidden shrink-0"
+        >
+          <img
+            src="assets/cat-accesorios.jpg"
+            alt="Accesorios"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
+          />
+        </div>
+        <div class="flex-1 text-center py-4">
+          <h3
+            class="text-xl font-light tracking-[0.2em] uppercase transition-colors duration-300 group-hover:text-zinc-300"
+          >
+            Accesorios
+          </h3>
+          <span
+            class="text-[9px] text-zinc-500 uppercase tracking-[0.4em] block mt-1"
+            >vantu</span
+          >
+        </div>
+      </div>
+
+      <div
+        class="flex w-full bg-[#0d0d0d]/90 backdrop-blur-md rounded-l-[2.5rem] overflow-hidden items-center border border-zinc-900 hover:border-zinc-400/50 transform hover:scale-[1.06] transition-all duration-500 ease-out cursor-pointer group shadow-lg"
+      >
+        <div
+          class="w-32 h-32 bg-zinc-900 rounded-l-[2.5rem] overflow-hidden shrink-0"
+        >
+          <img
+            src="assets/cat-calzado.jpeg"
+            alt="Calzado"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
+          />
+        </div>
+        <div class="flex-1 text-center py-4">
+          <h3
+            class="text-xl font-light tracking-[0.2em] uppercase transition-colors duration-300 group-hover:text-zinc-300"
+          >
+            Calzado
+          </h3>
+          <span
+            class="text-[9px] text-zinc-500 uppercase tracking-[0.4em] block mt-1"
+            >vantu</span
+          >
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-white text-zinc-900 py-24 w-full">
+    <div class="max-w-7xl mx-auto px-6 md:px-12 space-y-16">
+      <div class="text-center">
+        <h2
+          class="text-4xl md:text-5xl font-serif font-light tracking-widest text-[#3d0c11] uppercase"
+        >
+          Novedades de la Colección
+        </h2>
+      </div>
+
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-12"
+      >
+        @for (prod of productos; track prod.id) {
+          <div
+            class="flex flex-col group cursor-pointer border border-transparent hover:border-[#3d0c11] p-3 transform hover:scale-[1.015] transition-all duration-300 ease-in-out bg-white will-change-transform"
+          >
+            <div
+              class="w-full aspect-[3/3.8] bg-zinc-100 overflow-hidden relative"
+            >
+              <img
+                [src]="prod.imagenUrl"
+                [alt]="prod.nombre"
+                class="w-full h-full object-cover transition-transform duration-700 ease-in-out group-hover:scale-101"
+              />
+            </div>
+
+            <div
+              class="flex justify-between items-center mt-4 w-full min-h-[76px]"
+            >
+              <div class="flex flex-col justify-between h-full pr-2">
+                <div class="space-y-1">
+                  <span
+                    class="text-[10px] font-sans font-medium text-[#3d0c11] uppercase tracking-wider block"
+                  >
+                    {{ prod.color }}
+                  </span>
+                  <h3
+                    class="text-sm font-serif font-light tracking-wide text-zinc-800 uppercase leading-snug max-w-[170px] sm:max-w-[150px] lg:max-w-[160px]"
+                  >
+                    {{ prod.nombre }}
+                  </h3>
+                </div>
+                <span
+                  class="text-sm font-sans font-light text-zinc-600 block mt-1"
+                >
+                  PEN {{ prod.precio | number: "1.2-2" }}
+                </span>
+              </div>
+
+              <button
+                (click)="agregarAlCarrito(prod); $event.stopPropagation()"
+                class="bg-[#3d0c11] hover:bg-[#521319] text-white w-9 h-9 flex items-center justify-center transition-colors duration-300 shadow-md shrink-0 self-center rounded-none"
+                id="btn_agregar"
+              >
+                <i class="fa-solid fa-cart-shopping text-xs"></i>
+              </button>
+            </div>
+          </div>
+        }
+      </div>
+    </div>
+  </section>
+
+  <section
+    class="bg-[#111111] text-white py-24 w-full border-t border-zinc-900"
+  >
+    <div class="max-w-7xl mx-auto px-6 md:px-12 space-y-12">
+      <div class="text-center">
+        <h2
+          class="text-3xl md:text-4xl font-serif font-light tracking-[0.2em] text-zinc-100 uppercase"
+        >
+          Nuestra Comunidad en Instagram
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
+        <div
+          class="aspect-square bg-zinc-900 overflow-hidden group cursor-pointer relative"
+        >
+          <img
+            src="/assets/insta-1.jpeg"
+            alt="Instagram Comunidad"
+            class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105 filter brightness-90 group-hover:brightness-100"
+          />
+        </div>
+
+        <div
+          class="aspect-square bg-zinc-900 overflow-hidden group cursor-pointer relative"
+        >
+          <img
+            src="/assets/insta-2.jpeg"
+            alt="Instagram Comunidad"
+            class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105 filter brightness-90 group-hover:brightness-100"
+          />
+        </div>
+
+        <div
+          class="aspect-square bg-zinc-900 overflow-hidden group cursor-pointer relative"
+        >
+          <img
+            src="/assets/insta-3.jpeg"
+            alt="Instagram Comunidad"
+            class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105 filter brightness-90 group-hover:brightness-100"
+          />
+        </div>
+
+        <div
+          class="aspect-square bg-zinc-900 overflow-hidden group cursor-pointer relative"
+        >
+          <img
+            src="/assets/insta-4.jpeg"
+            alt="Instagram Comunidad"
+            class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105 filter brightness-90 group-hover:brightness-100"
+          />
+        </div>
+
+        <div
+          class="aspect-square bg-zinc-900 overflow-hidden group cursor-pointer relative"
+        >
+          <img
+            src="/assets/insta-5.jpeg"
+            alt="Instagram Comunidad"
+            class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105 filter brightness-90 group-hover:brightness-100"
+          />
+        </div>
+
+        <div
+          class="aspect-square bg-zinc-900 overflow-hidden group cursor-pointer relative"
+        >
+          <img
+            src="/assets/insta-6.jpeg"
+            alt="Instagram Comunidad"
+            class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105 filter brightness-90 group-hover:brightness-100"
+          />
+        </div>
+
+        <div
+          class="aspect-square bg-zinc-900 overflow-hidden group cursor-pointer relative"
+        >
+          <img
+            src="/assets/insta-7.jpeg"
+            alt="Instagram Comunidad"
+            class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105 filter brightness-90 group-hover:brightness-100"
+          />
+        </div>
+
+        <div
+          class="aspect-square bg-zinc-900 overflow-hidden group cursor-pointer relative"
+        >
+          <img
+            src="/assets/insta-8.jpeg"
+            alt="Instagram Comunidad"
+            class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105 filter brightness-90 group-hover:brightness-100"
+          />
+        </div>
+
+        <div
+          class="aspect-square bg-zinc-900 overflow-hidden group cursor-pointer relative"
+        >
+          <img
+            src="/assets/insta-9.jpeg"
+            alt="Instagram Comunidad"
+            class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105 filter brightness-90 group-hover:brightness-100"
+          />
+        </div>
+
+        <div
+          class="aspect-square bg-zinc-900 overflow-hidden group cursor-pointer relative"
+        >
+          <img
+            src="/assets/insta-10.jpeg"
+            alt="Instagram Comunidad"
+            class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105 filter brightness-90 group-hover:brightness-100"
+          />
+        </div>
+      </div>
+
+      <div class="text-center pt-6">
+        <a
+          href="https://instagram.com/tu_cuenta"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-block bg-white text-[#3d0c11] text-base font-serif tracking-[0.2em] uppercase px-16 py-3.5 hover:bg-zinc-100 transition-all duration-300 shadow-md"
+        >
+          Ingresa
+        </a>
+      </div>
+    </div>
+  </section>
+</div>

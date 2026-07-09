@@ -1,1 +1,42 @@
-/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Petrona:ital,wght@0,100..900;1,100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  /* Animación horizontal constante y fluida */
+  .animate-marquee-horizontal {
+    animation: marqueeHorizontalTS 80s linear infinite;
+  }
+}
+
+@keyframes marqueeHorizontalTS {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    /* Se desplaza el 50% exacto para enganchar con el duplicado de forma imperceptible */
+    transform: translateX(-50%);
+  }
+}
+
+/* Agrega esto a tu archivo CSS global o del componente */
+.fade-in-out {
+  animation: fadeInOut 3s forwards;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  15% {
+    opacity: 1;
+  }
+  85% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

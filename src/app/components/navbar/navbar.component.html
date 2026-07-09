@@ -1,0 +1,52 @@
+<header
+  class="w-full bg-gradient-to-b from-[#6E001B] from-0% via-[#400916] via-0% to-[#111111] to-60% bg-[#111111] text-white font-display"
+>
+  <div
+    class="w-full bg-transparent text-center py-2 text-[10px] tracking-[0.2em] uppercase font-light text-gray-300"
+  >
+    Envío gratis en toda sección de hombres
+  </div>
+
+  <div class="max-w-7xl mx-auto px-6 py-6 flex items-center justify-between">
+    <button
+      class="text-xl hover:text-gray-400 transition-colors cursor-pointer"
+    >
+      <i class="fa-solid fa-magnifying-glass"></i>
+    </button>
+
+    <div class="text-center flex flex-col items-center">
+      <h3 class="text-6xl font-normal tracking-wide">Vantu</h3>
+      <span class="text-[9px] tracking-[0.4em] uppercase text-gray-400 mt-1"
+        >Italian Fashion</span
+      >
+    </div>
+
+    <button
+      type="button"
+      (click)="abrirCarrito()"
+      class="text-xl hover:text-gray-400 transition-colors relative cursor-pointer"
+    >
+      <i class="fa-solid fa-cart-shopping"></i>
+    </button>
+  </div>
+
+  <nav
+    class="w-full max-w-2xl mx-auto flex justify-between justify-items-center px-12 pb-6 text-sm tracking-widest font-light text-gray-300 p-6"
+  >
+    <a
+      routerLink="/"
+      class="hover:text-white transition-colors text-xl font-light"
+      >Idiomas</a
+    >
+    <a
+      routerLink="/"
+      class="hover:text-white transition-colors text-xl font-light"
+      >Inicio</a
+    >
+    <a
+      routerLink="/"
+      class="hover:text-white transition-colors text-xl font-light"
+      >Contacto</a
+    >
+  </nav>
+</header>

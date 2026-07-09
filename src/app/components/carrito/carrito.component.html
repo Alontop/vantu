@@ -1,0 +1,95 @@
+<div
+  *ngIf="estaAbierto"
+  class="fixed inset-0 z-[999] bg-black/50 backdrop-blur-sm transition-opacity"
+  (click)="cerrar()"
+></div>
+
+<div
+  class="fixed top-0 right-0 z-[1000] h-full w-full max-w-md bg-white shadow-2xl transform transition-transform duration-300 ease-in-out"
+  [class.translate-x-0]="estaAbierto"
+  [class.translate-x-full]="!estaAbierto"
+>
+  <div class="p-6">
+    <div class="flex justify-between items-center mb-6">
+      <h2 class="text-xl text-black">Tu Carrito</h2>
+      <button (click)="cerrar()" class="text-2xl text-black">&times;</button>
+    </div>
+
+    <div class="space-y-4">
+      <div
+        *ngFor="let p of productosCarrito"
+        class="flex items-center gap-4 border-b pb-4"
+      >
+        <img [src]="p.imagenUrl" class="w-16 h-16 object-cover" />
+
+        <div class="flex-grow">
+          <h4 class="text-sm font-semibold text-black">{{ p.nombre }}</h4>
+          <p class="text-xs text-gray-600">
+            PEN {{ p.precio }} x {{ p.cantidad }}
+            <span class="font-bold">= PEN {{ p.precio * p.cantidad }}</span>
+          </p>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <button
+            (click)="ajustarCantidad(p.id, -1)"
+            class="bg-gray-200 text-black px-2 py-1 rounded hover:bg-gray-300"
+          >
+            -
+          </button>
+          <span class="font-bold text-black">{{ p.cantidad }}</span>
+          <button
+            (click)="ajustarCantidad(p.id, 1)"
+            class="bg-gray-200 text-black px-2 py-1 rounded hover:bg-gray-300"
+          >
+            +
+          </button>
+        </div>
+      </div>
+
+      <div *ngIf="productosCarrito.length > 0" class="border-t pt-4 mt-auto">
+        <div class="flex justify-between text-lg font-bold text-black mb-4">
+          <span>Total:</span>
+          <span>PEN {{ carritoService.obtenerTotal() | number: "1.2-2" }}</span>
+        </div>
+
+        <div class="space-y-3">
+          <input
+            [(ngModel)]="nombreCliente"
+            type="text"
+            placeholder="Nombre del cliente"
+            class="w-full border p-2 text-black"
+          />
+
+          <select
+            [(ngModel)]="metodoPagoSeleccionado"
+            (change)="ajustarCampoPago()"
+            class="w-full border p-2 text-black"
+          >
+            <option value="Tarjeta">Tarjeta de Crédito / Débito</option>
+            <option value="Yape / Plin">Yape / Plin</option>
+          </select>
+
+          <input
+            type="text"
+            [(ngModel)]="detallePago"
+            [disabled]="esDeshabilitado"
+            [placeholder]="placeholderTexto"
+            [ngStyle]="{
+              color: esDeshabilitado ? 'gray' : 'black',
+              'font-style': esDeshabilitado ? 'italic' : 'normal',
+            }"
+            class="w-full border p-2"
+          />
+
+          <button
+            (click)="procesarPago()"
+            class="w-full bg-[#3d0c11] text-white py-3 font-bold uppercase hover:bg-[#521319]"
+          >
+            Pagar Ahora
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
